@@ -1,0 +1,29 @@
+/*선택자(selector)*/
+
+#header-center /*div일 때는 생략 가능하다*/
+{
+margin: 0 Auto;
+width: 1130px;
+}
+
+
+#header-serch > h1 { /*부모관계*/
+    width: 280px;
+
+}
+
+#header-search h2 {
+    display: none;
+}
+
+#header-search fieldset{
+    width: 520px;
+}
+
+/*
+자손 선택자
+#header-cneter h1{ 
+
+}
+
+*/
