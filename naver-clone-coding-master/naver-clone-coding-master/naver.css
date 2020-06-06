@@ -1,0 +1,93 @@
+/* Cascading Style Sheet */
+/* 선택자(selector) */
+*{
+    box-sizing: border-box;
+}
+.blind {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+#header .logo_default .logo_naver {
+    display: inline-block;
+    width: 222px;
+    height: 52px;
+    vertical-align: top;
+    background-position: 0 -161px;
+}
+
+#header-center {
+    margin: 0 auto;
+    width: 1080px;
+}
+
+#header-search a {
+    text-decoration: none;
+}
+
+#header-search  h1 {
+    width: 198px;
+    height: 48px;
+    display: inline-block;
+    /*background-image: url(./sp_search.png);*/
+    background: url(./sp_search.png) -4px -4px no-repeat;
+    /*text-indent: 100%;
+    overflow: hidden;*/
+    vertical-align: middle;
+    position: relative;
+    top: -4px;
+}
+
+#header-search h1 span{
+    display: none;
+}
+
+#header-search h2 {
+    display: none;
+}
+
+#header-search fieldset {
+    margin-left:20px;
+    width: 520px;
+    height: 42px;
+    display: inline-block;
+    padding: 12px 0 12px 10px;
+    border: 2px solid #03cf5d; /*hex 표기법*/
+    vertical-align: middle;
+    position: relative;
+}
+
+#header-search fieldset input{
+    border: none;
+    padding: 0;
+    outline: none;
+    vertical-align: top;
+    width: 405px;
+    height: 23px;
+}
+
+#header-search button{
+    width: 46px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    background: #03cf5d;
+    position: absolute;
+    right: 0;
+    top:0;
+
+}
+
+#search-image{
+    background-image: url(./sp_search.png);
+    background-position: 0 -50px;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 210px;
+    display: inline-block;
+    margin: -2px;
+}
