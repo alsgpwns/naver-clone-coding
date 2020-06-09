@@ -5,6 +5,8 @@
 html, body {
     margin: 0;
     padding: 0;
+    font-family: Doutum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif;
+
 }
 
 #fixed {
@@ -35,7 +37,15 @@ html, body {
 
 .center-align {
     margin: 0 auto;
-    width: 1080px;
+    width: 1080px;   
+}
+
+header{
+    height: 170px;
+}
+#header-search{
+    clear: both;
+    padding-top: 20px;
 }
 
 #header-search a {
@@ -52,8 +62,22 @@ html, body {
     background: url(./sp_search.png) -4px -4px no-repeat;
     vertical-align: middle;
     position: relative;
-    top: -6px;
+    top: -5px;
+    left: 1px;
 }
+
+#header-top{ /*네이버를 시작페이지로~*/
+    float: right;
+    margin-top: 8px;
+}
+
+#header-top span{
+    color: #888;
+    letter-spacing: -1px;
+    font-size: 11px;
+    line-height: 22px; /*글자의 높이*/
+}
+
 
 #header-search h1 span {
     display: none;
@@ -107,10 +131,16 @@ html, body {
     display: inline-block;
     margin: 14px;
 }
+nav{
+    height: 40px;
+    border-top: 1px solid #d1d8e4;
+    border-bottom: 1px solid #d1d8e4;
+}
 
 nav ul {
+    display: inline-block;
     margin: 0;
-    padding: 0;
+    padding: 16px 0 0 4px; /*시계방향*/
     list-style: none;
 }
 
@@ -157,8 +187,23 @@ nav li:nth-child(6) span:first-child {
     background-position: -70px -285px;
 }
 
+.nav-divider{
+    display: inline-block;
+    margin: 18px 16px 0px;
+    width: 1px;
+    height: 14px;
+    background: #ebeef3;
+}
+
 #search-ranking {
     position: absolute;
-    top: 0;
+    top: 16px;
     right: 0;
+}
+
+
+#rank-number{
+    margin-top: -9px;
+    color: #00ab33;
+    font-size: 16px;
 }
