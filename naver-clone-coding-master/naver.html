@@ -8,13 +8,11 @@
   </head>
   <body>
     <header>
-      
-      <div id="fixed">고정</div>
       <div class="center-align"> <!-- 가운데 정렬용 div -->
         <!-- 속성명: 속성값; 속성명2: 속성값2;  -->
         <!-- 인라인 스타일 -->
         <div id="header-top">
-          <span>네이버를 시작페이지로ㅣ</span>
+          <span>네이버를 시작페이지로 >ㅣ</span>
           <span>쥬니어네이버ㅣ</span>
           <span>해피빈ㅣ</span>
         </div>
@@ -28,6 +26,8 @@
           <fieldset>
             <legend class="blind">검색</legend>
             <input />
+            <span id="search-keyboard"></span>
+            <span id="search-history"></span>
             <button>
               <span class="blind">검색</span>
               <span id="search-image"></span>
@@ -41,9 +41,9 @@
         <div id="search-ranking">
           <h2 class="blind">실시간 검색어</h2>
           <span id="rank-number">1</span>
-          <span>혜멍이</span>
+          <span id="rank-title">혜멍이</span>
         </div>
-        <ul> <!-- unordered list --> <!-- ol 태그도 있어요 ordered list -->
+        <ul> 
           <li>
             <a href="">
               <span class="nav-item-mail"></span>
@@ -53,16 +53,28 @@
           <li><a href=""><span></span><span class="blind">카페</span></a></li> <!-- list item -->
           <li><a href=""><span></span><span class="blind">블로그</span></a></li> <!-- list item -->
           <li><a href=""><span></span><span class="blind">지식인</span></a></li> <!-- list item -->
-          <li><a href=""><span></span><span class="blind">쇼핑</span></a></li> <!-- list item -->
-          <li><a href=""><span></span><span class="blind">네이버페이</span></a></li> <!-- list item -->
           <li><a href=""><span></span><span class="blind">네이버쇼핑</span></a></li> <!-- list item -->
+          <li><a href=""><span></span><span class="blind">네이버페이</span></a></li> <!-- list item -->
+          <li><a href=""><span></span><span class="blind">네이버 TV</span></a></li> <!-- list item -->
+          <li><a href=""><span></span><span class="blind">사전</span></a></li> <!-- list item -->
+          <li><a href=""><span></span><span class="blind">뉴스</span></a></li> <!-- list item -->
+          <li><a href=""><span></span><span class="blind">증권</span></a></li> <!-- list item -->
+          <li><a href=""><span></span><span class="blind">부동산</span></a></li> <!-- list item -->
+          <li><a href=""><span></span><span class="blind">지도</span></a></li> <!-- list item -->
+          <li><a href=""><span></span><span class="blind">영화</span></a></li> <!-- list item -->
+          <li><a href=""><span></span><span class="blind">뮤직</span></a></li> <!-- list item -->
+          <li><a href=""><span></span><span class="blind">웹툰</span></a></li> <!-- list item -->
         </ul>
         <div class="nav-divider"></div>
+        <ul>
+          <li class="more"><a href=""><span></span><span class="blind">더보기</span></a></li> <!-- list item -->
+        </ul>
       </div>
     </nav>
     <main>
-      <h3>연합뉴스</h3>
-      <ol>
+      <div class="center-align">
+        <h3>연합뉴스</h3>
+        <ol>
         <li>충격) 유승빈 똥개로 밝혀져...</li>
         <li>속보) 유승빈 진짜 똥싸는 똥개였다...</li>
         <li>중대발표: 유승빈 정신은 온전한건가?</li>
@@ -93,11 +105,12 @@
       <h3>법률</h3>
       <h3>쇼핑</h3>
       <h6>쇼핑</h6>
-    </main>
-    <footer>
-      <div>공지사항</div>
-      <div>Creators</div>
-      <div>회사소개</div>
-    </footer>
-  </body>
+    </div>
+  </main>
+  <footer>
+    <div>공지사항</div>
+    <div>Creators</div>
+    <div>회사소개</div>
+  </footer>
+</body>
 </html>
